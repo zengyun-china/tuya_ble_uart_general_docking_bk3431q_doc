@@ -20,3 +20,7 @@ BLE 单点通用方案 MCU 对接开发的过程概述。
 开发概述：
 
 <https://docs.tuya.com/zh/iot/ble-module-mcu-development-overview/ble-module-mcu-development-overview?count=0.8049706186623162>
+
+
+MCU SDK
+由于MCU SDK涉及一些产品的一些代码需要自动生成。所以不在该仓库中展示。用户需要请在产品界面-硬件开发 中选择涂鸦标准模组+mcu对接方式，然后再下载资料区选择MCU SDK下载
