@@ -1,0 +1,48 @@
+﻿{
+  "SequenceName": "SensorTest",
+  "ProtocolType": "Bluetooth",
+  "PlatformName": "",
+  "TestItems": [
+    {
+      "Name": "CHECK_STATION",
+      "Text": "工站信息检查",
+      "Paras": null
+},
+{
+      "Name": "CHECK_CODE",
+      "Text": "SN检查",
+      "Paras": {
+        "CodeType": "InputSN",
+        "Rule": "^[A-Za-z]{0,1}##WORK_ORDER##[0-9]{5}$",
+        "Extension": "NONE"
+      }
+    },
+    {
+      "Name": "CONNECT",
+      "Text": "建立连接",
+      "Paras": {
+        "ConnectType": "SerialPort",
+		"TestType":"PCBA"
+      }
+    },
+    {
+      "Name": "Enter_TESTMODE",
+      "Text": "进入测试模式",
+      "Paras": null
+	},
+{
+      "name": "CHECK_INFO_FIRMWARE",
+      "text": "固件版本检测",
+      "paras": {
+        "checkitems": [ "masterfirmwarename", "masterfirmwarever" ]
+      }
+    },
+    {
+      "Name": "TEST_AUTH",
+      "Text": "授权测试",
+      "Paras": {
+        "AuthStage": "Auth"
+      }
+    }
+]
+}
