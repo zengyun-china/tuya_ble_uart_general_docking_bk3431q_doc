@@ -1,0 +1,45 @@
+{
+  "SequenceName": "SensorTest",
+  "ProtocolType": "Bluetooth",
+  "PlatformName": "",
+  "TestItems": [
+    {
+      "Name": "CONNECT",
+      "Text": "建立连接",
+      "Paras": {
+        "ConnectType": "SerialPort",
+        "TestType": "Product"
+      }
+    },
+    {
+      "Name": "CONNECT_DONGLE",
+      "Text": "通过Dongle连接设备",
+      "Paras": {
+        "ConnectInfoType": "AuthSN"
+      }
+    },
+    {
+      "Name": "CHECK_CODE",
+      "Text": "SN检查",
+      "Paras": {
+        "CodeType": "InputSN",
+        "Rule": "^[A-Za-z]{0,1}##WORK_ORDER##[0-9]{5}$",
+        "Extension": "NONE"
+      }
+    },
+    {
+      "Name": "TEST_QUALITY_SIGNAL",
+      "Text": "RSSI信号值获取测试",
+      "Paras": {
+        "TestType": "RSSI",
+        "SSID": "ty_prod",
+        "LowLimit": -100,
+        "HighLimit": 0
+      }
+    },
+    {
+      "Name": "DISCONNECT",
+      "Text": "断开连接"
+    }
+  ]
+}

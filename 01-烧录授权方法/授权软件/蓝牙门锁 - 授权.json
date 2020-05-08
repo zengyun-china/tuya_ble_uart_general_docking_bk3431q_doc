@@ -3,11 +3,7 @@
   "ProtocolType": "Bluetooth",
   "PlatformName": "",
   "TestItems": [
-    {
-      "Name": "CHECK_STATION",
-      "Text": "工站信息检查",
-      "Paras": null
-},
+
 {
       "Name": "CHECK_CODE",
       "Text": "SN检查",
@@ -41,7 +37,7 @@
       "Name": "TEST_AUTH",
       "Text": "授权测试",
       "Paras": {
-        "AuthStage": "Auth"
+        "AuthStage": "TokenAuth"
       }
     }
 ]
