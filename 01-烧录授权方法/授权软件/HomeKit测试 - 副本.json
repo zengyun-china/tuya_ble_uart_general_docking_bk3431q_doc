@@ -1,0 +1,35 @@
+﻿{
+  "SequenceName": "SensorTest",
+  "ProtocolType": "Bluetooth",
+  "PlatformName": "",
+  "TestItems": [
+    {
+      "Name": "CONNECT",
+      "Text": "建立连接",
+      "Paras": {
+        "ConnectType": "SerialPort",
+        "TestType": "PCBA"
+      }
+    },
+{
+      "Name": "RESET_HARDWARE",
+      "Text": "硬件复位",
+      "Paras": null
+    },
+    {
+      "Name": "Enter_TESTMODE",
+      "Text": "进入测试模式",
+      "Paras": {
+        "Mode": "TestMode"
+      }
+	},
+    {
+      "Name": "WR_CODE",
+      "Text": "写HomeKit",
+      "Paras": {
+        "WRType": "Write",
+        "CodeType": "HomeKit"
+      }
+    }
+  ]
+}
